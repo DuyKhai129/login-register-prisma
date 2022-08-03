@@ -76,7 +76,7 @@ const authController = {
       res.status(200).json({
         status: true,
         message: "Account login successful",
-        Response: { user, checkPassword, accessToken },
+        Response: { user },
       });
     } catch (err) {
       next(err);
